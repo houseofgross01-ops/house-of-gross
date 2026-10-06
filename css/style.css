@@ -100,3 +100,23 @@ nav ul a:hover:after{width:100%}
   .tile,.play{animation:none}
   .rv{opacity:1;transform:none;transition:none}
 }
+/* ===== CLICK BURST ===== */
+.ck{position:fixed;pointer-events:none;z-index:9999;left:0;top:0}
+
+/* expanding ring */
+.ck-ring{width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid var(--acc);border-radius:50%;
+  animation:ckring .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes ckring{to{transform:scale(7);opacity:0;border-width:1px}}
+
+/* soft glow */
+.ck-glow{width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,46,99,.45),transparent 70%);
+  animation:ckglow .6s ease-out forwards}
+@keyframes ckglow{from{transform:scale(.3);opacity:1}to{transform:scale(2.2);opacity:0}}
+
+/* flying particles */
+.ck-dot{width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;
+  animation:ckdot .75s cubic-bezier(.1,.7,.3,1) forwards}
+@keyframes ckdot{to{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
+
+@media(prefers-reduced-motion:reduce){.ck{display:none}}
