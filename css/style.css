@@ -120,3 +120,6 @@ nav ul a:hover:after{width:100%}
 @keyframes ckdot{to{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
 
 @media(prefers-reduced-motion:reduce){.ck{display:none}}
+
+.tile:has(.bgv):after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.65));z-index:0}
+.tile small,.tile h2{position:relative;z-index:1}
