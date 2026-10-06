@@ -50,7 +50,12 @@
 </div></section>
 
 <section class="visit" id="contact"><div><div class="eyebrow">Visit us</div><h2 class="sec">Jaipur, India</h2><p>There is a fine line between Gross and Perfection. We help you cross it.</p></div>
-<div><div class="eyebrow">Start a project</div><form onsubmit="event.preventDefault();this.innerHTML='<p><b>Got it. We\'ll be in touch.</b></p>'"><input type="email" placeholder="Your email" required><button class="btn" type="submit">Go Gross</button></form></div></section>
+<form id="lead" action="https://formspree.io/f/mljgdnjl" method="POST">
+  <input type="email" name="email" placeholder="Your email" required>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <button class="btn" type="submit">Go Gross</button>
+  <p id="lead-msg" style="width:100%;margin:8px 0 0;font-size:13px"></p>
+</form>
 
 <footer><a class="logo" href="#top"><img src="images/logo-hogs.png" alt="HOGS"></a><span>House of Gross · Culture Engineering Agency</span><span>© 2026 HOGS</span></footer>
 <script src="js/main.js?v=3"></script>
