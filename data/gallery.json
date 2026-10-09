@@ -1,11 +1,77 @@
 {
- "cats":[
-  {"id":"fashion","name":"Fashion","c":"#ff2e63,#7a0f2e","brands":["Raakhdi","Rama's Kurti","Litloom"]},
-  {"id":"concerts","name":"Concerts","c":"#222,#666","brands":["Farhan Akhtar","B Praak","King","Bella","Panther","Raftaar","Vishal & Shekhar","Seedhe Maut","Saaz","Prakhar"]},
-  {"id":"brand-films","name":"Brand Films","c":"#d9a441,#5a2d00","brands":["Jaipur Rugs","Raakhdi","Amarpali","Ikaki","Honda"]},
-  {"id":"food-beverages","name":"Food & Beverages","c":"#7a0f2e,#222","brands":["Native","Cabana Resort","Ikaki","Merlot","Archive Table","Osaka"]},
-  {"id":"hospitality","name":"Hospitality","c":"#444,#111","brands":["Radisson","Cabana Resort","Rami Tarang","Siroko"]},
-  {"id":"standup","name":"Standup","c":"#ff2e63,#d9a441","brands":["Harsh Gujral","Zakir Khan"]}
+ "cats": [
+  {
+   "id": "fashion",
+   "name": "Fashion",
+   "c": "#ff2e63,#7a0f2e",
+   "brands": [
+    "Raakhdi",
+    "Rama's Kurti",
+    "Litloom"
+   ]
+  },
+  {
+   "id": "concerts",
+   "name": "Concerts",
+   "c": "#222,#666",
+   "brands": [
+    "Farhan Akhtar",
+    "B Praak",
+    "King",
+    "Bella",
+    "Panther",
+    "Raftaar",
+    "Vishal & Shekhar",
+    "Seedhe Maut",
+    "Saaz",
+    "Prakhar"
+   ]
+  },
+  {
+   "id": "brand-films",
+   "name": "Brand Films",
+   "c": "#d9a441,#5a2d00",
+   "brands": [
+    "Jaipur Rugs",
+    "Raakhdi",
+    "Amarpali",
+    "Ikaki",
+    "Honda"
+   ]
+  },
+  {
+   "id": "food-beverages",
+   "name": "Food & Beverages",
+   "c": "#7a0f2e,#222",
+   "brands": [
+    "Native",
+    "Cabana Resort",
+    "Ikaki",
+    "Merlot",
+    "Archive Table",
+    "Osaka"
+   ]
+  },
+  {
+   "id": "hospitality",
+   "name": "Hospitality",
+   "c": "#444,#111",
+   "brands": [
+    "Radisson",
+    "Cabana Resort",
+    "Rami Tarang",
+    "Siroko"
+   ]
+  },
+  {
+   "id": "standup",
+   "name": "Standup",
+   "c": "#ff2e63,#d9a441",
+   "brands": [
+    "Harsh Gujral",
+    "Zakir Khan"
+   ]
+  }
  ],
- "media":{}
+ "media": {}
 }
