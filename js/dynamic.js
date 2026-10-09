@@ -35,3 +35,20 @@
     }
   }).catch(function(){});
 })();
+/* ===== HERO TILES 2 & 3 VIDEO ===== */
+(function(){
+  fetch("data/gallery.json?t="+Date.now()).then(function(r){return r.json()}).then(function(d){
+    [["hero2",".tile.t2","The Gross Line"],["hero3",".tile.t3","Language Bible"]].forEach(function(x){
+      var v=d[x[0]]&&d[x[0]].v,t=document.querySelector(x[1]);
+      if(!v||!t||t.querySelector(".bgv"))return;
+      t.style.isolation="isolate";t.dataset.video=v;
+      t.href="https://www.youtube.com/watch?v="+v;
+      t.insertAdjacentHTML("afterbegin",
+        '<div class="bgv" style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1">'+
+        '<iframe style="position:absolute;top:50%;left:50%;width:100%;height:100%;border:0;transform:translate(-50%,-50%) scale(1.9)" '+
+        'src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&mute=1&loop=1&playlist='+v+'&controls=0&modestbranding=1&rel=0&playsinline=1&disablekb=1&iv_load_policy=3" '+
+        'allow="autoplay; encrypted-media" tabindex="-1" loading="lazy" title="'+x[2]+'"></iframe>'+
+        '<div style="position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.65))"></div></div>');
+    });
+  }).catch(function(){});
+})();
