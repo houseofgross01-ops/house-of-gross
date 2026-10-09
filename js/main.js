@@ -88,17 +88,3 @@ return '<a class="vid" target="_blank" rel="noopener" href="'+v.url+'" style="ba
     }
   },{passive:true});
 })();
-
-/* ===== VIDEO POPUP (no controls) ===== */
-(function(){
-  function close(){var m=document.getElementById("vm");if(m)m.remove()}
-  document.addEventListener("click",function(e){
-    var t=e.target.closest("[data-video]");if(!t)return;
-    e.preventDefault();close();
-    var m=document.createElement("div");m.id="vm";
-    m.innerHTML='<div class="box"><button class="x" aria-label="Close">&times;</button><iframe src="https://www.youtube-nocookie.com/embed/'+t.dataset.video+'?autoplay=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>';
-    m.addEventListener("click",function(ev){if(ev.target===m||ev.target.className==="x")close()});
-    document.body.appendChild(m);
-  });
-  addEventListener("keydown",function(e){if(e.key==="Escape")close()});
-})();
