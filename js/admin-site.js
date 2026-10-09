@@ -74,3 +74,24 @@
     if(window.data&&$("#app")&&!$("#app").hidden){clearInterval(t);init()}
   },300);
 })();
+/* ===== HERO TILES 2 & 3 ===== */
+(function(){
+  function yid(s){var m=String(s||"").match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/);return m?m[1]:(/^[\w-]{11}$/.test(String(s).trim())?String(s).trim():null)}
+  var t=setInterval(function(){
+    var h=document.getElementById("hl");
+    if(!window.data||!h)return;clearInterval(t);
+    var ref=h.closest(".box");
+    [["hero2","The Gross Line"],["hero3","Language Bible"]].forEach(function(x){
+      var d=document.createElement("div");d.className="box";
+      d.innerHTML='<label>Hero: '+x[1]+' background video (YouTube link, khali = sirf colour)</label><input id="'+x[0]+'" placeholder="https://youtu.be/...">';
+      ref.after(d);ref=d;
+      var inp=d.querySelector("input");
+      inp.value=data[x[0]]&&data[x[0]].v?"https://youtu.be/"+data[x[0]].v:"";
+      inp.addEventListener("input",function(){
+        var v=inp.value.trim();
+        if(!v){delete data[x[0]];data._d=1;dirty();return}
+        var id=yid(v);if(id){data[x[0]]={v:id};data._d=1;dirty()}
+      });
+    });
+  },300);
+})();
