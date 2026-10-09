@@ -1,0 +1,33 @@
+.gh{padding:60px 4vw 30px}
+.gh h1{font:clamp(44px,8vw,110px)/.9 Anton,Impact,sans-serif;text-transform:uppercase;margin:8px 0 14px}
+.gh p{color:var(--mut);max-width:560px;margin:0}
+#back{display:inline-block;margin-bottom:22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid currentColor}
+#back:hover{color:var(--acc)}
+#g{padding:0 4px 70px;min-height:50vh}
+
+.gg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.gg.b4{grid-template-columns:repeat(4,1fr)}
+.gt{position:relative;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff;overflow:hidden;background:var(--g);animation:rise .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i)*.06s)}
+.gt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gt:hover img{transform:scale(1.07)}
+.gt:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.7))}
+.gt small,.gt h3{position:relative;z-index:1}
+.gt small{letter-spacing:.14em;text-transform:uppercase;font-size:11px;opacity:.85;margin-bottom:6px}
+.gt h3{font:clamp(28px,3.4vw,50px)/.95 Anton,Impact,sans-serif;text-transform:uppercase;margin:0;transition:transform .5s ease}
+.gt:hover h3{transform:translateX(10px)}
+
+.gm{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.mi{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:var(--card);cursor:pointer}
+.mi img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.mi:hover img{transform:scale(1.06)}
+.soon{padding:60px 4vw;color:var(--mut);font-size:16px}
+
+#vm{position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;padding:4vw}
+#vm .box{position:relative;width:min(1000px,100%);aspect-ratio:16/9;background:#000}
+#vm .box.pic{aspect-ratio:auto;width:auto;background:none}
+#vm iframe{width:100%;height:100%;border:0}
+#vm .box img{max-width:100%;max-height:85vh;display:block}
+#vm .x{position:absolute;top:-44px;right:0;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+
+@media(max-width:900px){.gg,.gg.b4,.gm{grid-template-columns:repeat(2,1fr)}.gt{padding:16px}}
+@media(max-width:500px){.gg{grid-template-columns:1fr}}
