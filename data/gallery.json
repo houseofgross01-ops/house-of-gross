@@ -90,5 +90,54 @@
     "v": "jVOwZ9ZGg8k"
    }
   ]
+ },
+ "hero": {
+  "v": "Y1qsWPtTbLs"
+ },
+ "work": [
+  {
+   "t": "USDF · AI Ustaad",
+   "g": "Apna Hunar, AI Ka Hunar",
+   "tag": "Campaign",
+   "u": "https://youtu.be/rBrW81OAhY4?si=EQjq4RfKnsen4N5g",
+   "c": "#ff2e63,#400"
+  },
+  {
+   "t": "Project 2",
+   "g": "One-line result",
+   "tag": "Brand film",
+   "u": "https://youtu.be/uSiW5qOTvcA?si=uW4-PSPRzRK_urls",
+   "c": "#222,#666"
+  },
+  {
+   "t": "Project 3",
+   "g": "One-line result",
+   "tag": "Sonic",
+   "u": "https://youtu.be/nJj384OjS_g?si=zjyoQuzF_i6j5vzV",
+   "c": "#d9a441,#5a2d00"
+  }
+ ],
+ "reel": [
+  {
+   "title": "Apna Hunar, AI Ka Hunar",
+   "tag": "USDF Campaign",
+   "url": "https://www.youtube.com/@YOUR_CHANNEL"
+  },
+  {
+   "title": "Video title 2",
+   "tag": "Sonic",
+   "url": "https://www.youtube.com/@YOUR_CHANNEL"
+  },
+  {
+   "title": "Video title 3",
+   "tag": "Brand film",
+   "url": "https://www.youtube.com/@YOUR_CHANNEL"
+  }
+ ],
+ "hero2": {
+  "v": "Y8QEa9S9Jy0"
+ },
+ "hero3": {
+  "v": "nn8Kzjavh3U"
  }
 }
