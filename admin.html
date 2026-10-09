@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>HOGS Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=5">
+<style>
+.ad{max-width:1100px;margin:0 auto;padding:40px 4vw 90px}
+.ad h1{font:44px Anton,Impact,sans-serif;text-transform:uppercase;margin:0 0 20px}
+.ad h2{font:22px Anton,Impact,sans-serif;text-transform:uppercase;margin:28px 0 10px}
+.ad .box{background:var(--card);padding:20px;margin-bottom:16px}
+.ad label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:10px 0 4px}
+.ad input,.ad select{width:100%;padding:11px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:inherit}
+.ad .row2{display:flex;gap:10px;flex-wrap:wrap;align-items:end}.ad .row2>*{flex:1;min-width:180px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 14px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;font:inherit}
+.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.it{position:relative;aspect-ratio:1;background:#000;overflow:hidden}
+.it img{width:100%;height:100%;object-fit:cover}
+.it button{position:absolute;top:6px;right:6px;background:#000c;color:#fff;border:0;width:28px;height:28px;cursor:pointer;font-size:16px}
+.it em{position:absolute;left:6px;bottom:6px;background:var(--acc);color:#fff;font-size:10px;padding:2px 6px;font-style:normal;text-transform:uppercase}
+#bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 4vw;display:flex;gap:14px;align-items:center;justify-content:space-between;z-index:5}
+#msg{font-size:13px;color:var(--mut)}
+</style></head><body>
+<div class="ad">
+<h1>Gallery Admin</h1>
+
+<div class="box" id="login">
+  <div class="row2">
+    <div><label>GitHub repo</label><input id="repo" value="houseofgross01-ops/house-of-gross"></div>
+    <div><label>Branch</label><input id="branch" value="main"></div>
+  </div>
+  <label>Access token</label><input id="token" type="password" placeholder="github_pat_...">
+  <p style="margin:14px 0 0"><button class="btn" id="connect">Connect</button></p>
+</div>
+
+<div id="app" hidden>
+  <h2>1. Category</h2><div class="chips" id="cats"></div>
+  <h2>2. Brand</h2><div class="chips" id="brands"></div>
+  <div class="row2" style="margin-top:12px">
+    <div><label>New brand in this category</label><input id="nb" placeholder="Brand name"></div>
+    <div style="flex:0"><button class="btn" id="addb">Add brand</button></div>
+    <div style="flex:0"><button class="btn" id="delb" style="background:#a11">Remove brand</button></div>
+  </div>
+
+  <div id="work" hidden>
+    <h2 id="wt"></h2>
+    <div class="box">
+      <div class="row2">
+        <div><label>Add photos</label><input id="ph" type="file" accept="image/*" multiple></div>
+        <div><label>Add YouTube link</label><input id="yt" placeholder="https://youtu.be/..."></div>
+        <div style="flex:0"><button class="btn" id="addy">Add video</button></div>
+      </div>
+      <div class="row2">
+        <div><label>Brand cover photo</label><input id="cvb" type="file" accept="image/*"></div>
+        <div><label>Category cover photo</label><input id="cvc" type="file" accept="image/*"></div>
+      </div>
+    </div>
+    <div class="mg" id="mg"></div>
+  </div>
+</div>
+</div>
+<div id="bar"><span id="msg">Not connected.</span><button class="btn" id="pub" hidden>Publish changes</button></div>
+<script src="js/admin.js?v=1"></script>
+</body></html>
