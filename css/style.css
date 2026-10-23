@@ -35,3 +35,4 @@ div.ph{height:var(--h);background:linear-gradient(160deg,var(--a),var(--b))}
   #loader span{animation:none;width:120px}
   .ph{opacity:1;transform:none;transition:none}
 }
+img.ph{height:auto}
