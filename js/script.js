@@ -1,5 +1,5 @@
 /* Kitni photos hain (1.jpg se N.jpg tak) */
-var TOTAL=20;
+var TOTAL=40;
 
 (function(){
   var wall=document.getElementById("wall"),b=document.body,html="";
