@@ -2,7 +2,7 @@
 var SITE={
   email:"work@houseofgross.com",
   instagram:"https://www.instagram.com/hogs.bharat",
-  linkedin:"https://www.linkedin.com/in/house-of-gross"
+  linkedin:"https://www.linkedin.com/in/house-of-gross-394339412/"
 };
 
 (function(){
