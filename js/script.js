@@ -1,4 +1,4 @@
-var TOTAL=20;   // images/photos/1.jpg se TOTAL.jpg tak
+var TOTAL=38;   // images/photos/1.jpg se TOTAL.jpg tak
 
 (function(){
   var wall=document.getElementById("wall"),b=document.body,items=[],GAP=4;
