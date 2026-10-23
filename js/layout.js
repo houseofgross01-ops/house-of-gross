@@ -1,8 +1,8 @@
 /* ===== EDIT HERE: email aur social links ===== */
 var SITE={
   email:"work@houseofgross.com",
-  instagram:"https://www.instagram.com/YOUR_HANDLE",
-  linkedin:"https://www.linkedin.com/company/YOUR_PAGE"
+  instagram:"https://www.instagram.com/hogs.bharat",
+  linkedin:"https://www.linkedin.com/in/house-of-gross"
 };
 
 (function(){
