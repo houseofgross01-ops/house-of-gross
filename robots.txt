@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hogs-house-of-gross.impressivecart1.chatgpt.site/sitemap.xml
